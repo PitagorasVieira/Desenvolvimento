@@ -1,0 +1,79 @@
+.carousel-item img{
+    height: 400px;
+}
+
+.carousel-arrow {
+    font-size: 50px;
+    color: black;
+}
+#banner{
+    width: 100%;
+}
+body{
+    background: #cccccc;
+}
+
+p{
+    text-align: center;
+}
+
+em strong{
+    color: red;
+}
+
+.itens{
+    font-style: italic ;
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.beneficios{
+    padding: 20px;
+    background:burlywood;
+}
+
+.imagemBeneficios{
+    width: 50%;
+}
+        
+.principal{
+    padding: 30px;
+}
+
+.dialog-modal-popup {
+    position: relative;
+    background: url(../images/Popup-site-fones2.png) center;
+    opacity: 0.95;
+    top: 125px;
+    left: 980px;
+    left: 800px;
+    width: 300px;
+    height: 300px;
+    border: solid 1px #888;
+    box-shadow: 5px 5px 10px #B3CCE0;
+    animation-name: dialog-anim;
+    animation-duration: 0.8s;
+    border-radius: 200px;
+    cursor: pointer;
+}
+
+.dialog-modal-popup span {
+    font-size: 40px;
+    width: 50px;
+    float: right;
+  }
+ 
+  .dialog-modal-popup span a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+  }
+ 
+  .dialog-modal-popup span a:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: red;
+  }

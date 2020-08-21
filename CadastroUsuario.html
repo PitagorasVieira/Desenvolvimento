@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-datepicker/dist/css/bootstrap-datepicker3.min.css">
+
+    <style>
+    .select2-container .select2-selection--single {
+        
+        height: 36px;
+        border: 1px solid #aaaaaa9e;
+    }
+    </style>
+
+    <title>Hello, world!</title>
+    
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#"><img src="images/JFPEbranco.png"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Institucional</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Processos
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Processo Eletrônico PJe</a>
+            <a class="dropdown-item" href="#">Processo Eletrônico JEFs</a>
+            <!-- <div class="dropdown-divider"></div> -->
+            <a class="dropdown-item" href="#">Processo Físico Tebas</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Publicações</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+    </nav>
+
+    
+
+    <div class="container my-3">
+      <div class="row">
+        <div class="col">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <h5 class="card-header">Cadastro de Usuários</h5>
+                <div class="card-body">
+                    <form>
+                        <div class="row">
+                        <div class="form-group col">
+                          <label for="inputNome">Nome</label>
+                          <input type="text" class="form-control" id="inputNome" aria-describedby="emailHelp">
+                          <small id="emailHelp" class="form-text text-muted"></small>
+                        </div>
+                        <div class="form-group col">
+                            <label for="inputSobrenome">Sobrenome</label>
+                            <input type="text" class="form-control" id="inputSobrenome" aria-describedby="emailHelp">
+                            <small id="emailHelp" class="form-text text-muted"></small>
+                          </div>
+                        </div>
+                        <div class="row">
+                        <div class="form-group col-4">
+                          <label for="ddlEstado">Estado</label>
+                          <select id="ddlEstado" class="form-control" style="height: 37px;">
+                            <option value="">Selecione...</option>
+                            <option value="1">Acre</option>
+                            <option value="2">Alagoas</option>
+                            <option value="3">Amapá</option>
+                            <option value="4">Amazonas</option>
+                            <option value="5">Bahia</option>
+                            <option value="6">Ceará</option>
+                            <option value="7">Distrito Federal</option>
+                            <option value="8">Espírito Santo</option>
+                            <option value="9">Goiás</option>
+                            <option value="10">Maranhão</option>
+                            <option value="11">Mato Grosso</option>
+                            <option value="12">Mato Grosso do Sul</option>
+                            <option value="13">Minas Gerais</option>
+                            <option value="14">Pará</option>
+                            <option value="15">Paraíba</option>
+                            <option value="16">Paraná</option>
+                            <option value="17">Pernambuco</option>
+                            <option value="18">Piauí</option>
+                            <option value="19">Rio de Janeiro</option>
+                            <option value="20">Rio Grande do Norte</option>
+                            <option value="21">Rio Grande do Sul</option>
+                            <option value="22">Rondônia</option>
+                            <option value="23">Roraima</option>
+                            <option value="24">Santa Catarina</option>
+                            <option value="25">São Paulo</option>
+                            <option value="26">Sergipe</option>
+                            <option value="27">Tocantins</option>
+                            <option value="28">Estrangeiro</option>
+                        </select>
+                        </div>
+                        <div class="form-group col-5">
+                            <label for="ddlCidade">Cidade</label>
+                            <select class="form-control" id="ddlCidade" disabled>
+                            </select>
+                        </div>
+                          <div class="form-group col-3">
+                            <label for="inputCEP">CEP</label>
+                            <input type="password" class="form-control" id="inputCEP">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col">
+                            <label for="inputData1">Data 1</label>
+                            <input type="text" class="form-control datepicker" id="inputData1">
+                          </div>
+                          <div class="form-group col">
+                            <label for="idSelect2">Campo teste Select2</label>
+                            <select class="form-control" id="idSelect2" disabled>
+                                    
+                            </select>
+                          </div>
+                        </div>
+                        
+                        <div class="form-group form-check">
+                          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                          <label class="form-check-label" for="exampleCheck1">Aceito os termos e condições</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar formulário</button>
+                    </form>
+                  
+                  
+                  </div>
+                </div>
+            </div>
+          </div>
+          <hr />
+                  
+        </div>
+        
+      </div>
+     
+    </div>
+
+    <footer>
+    <!-- <div class="container-fluid" style="height: 300px; background-color: #5776b0;">
+      <div class="container">
+      <div class="row" >
+        <div class="col-sm-12 col-md-3" style="height: 181px; border: solid 1px white; margin-top: 20px;">
+          <p>Este site é preparado para
+            pessoas com deficiências
+            visual e auditiva</p>
+        </div>
+        <div class="col-sm-12 col-md-9">
+          <div class="row">
+            <div class="col h72" style="height: 84px; border: solid 1px white; margin-top: 20px;"></div>
+            <div class="col" style="height: 84px; border: solid 1px white; margin-top: 20px;"></div>
+          </div>
+          <div class="row">
+            <div class="col mx-0 my-3" style="height: 80px; border: solid 1px white;"></div>
+            <div class="col mx-2 my-3" style="height: 80px; border: solid 1px white;"></div>
+            <div class="col mx-2 my-3" style="height: 80px; border: solid 1px white;"></div>
+            <div class="col mx-2 my-3" style="height: 80px; border: solid 1px white;"></div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+    </div> -->
+
+  </footer>
+
+         
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/select2/dist/js/select2.full.min.js"></script>
+    <script src="node_modules/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+  </body>
+
+        <script>
+        
+        $(document).ready(function(){
+                       
+
+            $("#ddlEstado").select2();
+
+            $("#ddlEstado").on('select2:select', function(e){
+              var estado = e.params.data;
+              console.log(estado);
+              console.log(estado.id);
+              if(estado.id != ""){
+              $.ajax({
+                method: "GET",
+                url:"https://localhost:44352/api/Cidade/ " + estado.id,
+                dataType: "json",
+                success: function(data){
+                  var cidades = data;
+                  console.log(data);
+                  var items = '<option>Selecione a cidade... </option>';
+                  $.each(cidades, function (index, cidade) {
+                                        
+                    items += '<option value= + "'+ cidade.id + '">' + cidade.text + '</option>'
+                  });
+
+                  $("#idSelect2").html(items);
+                  $("#idSelect2").prop('disabled', false);
+
+                }             
+              });
+            }else{
+              $("#idSelect2").prop('disabled', true);
+              $("#idSelect2").html('');
+            }
+            }); 
+
+
+            $("#idSelect2").select2();
+
+            // $("#idSelect2").on('select2:select', function(e){
+            //     var data = e.params.data;
+            //     console.log(data);
+            // });
+
+            // var $cidade = $('#ddlCidade');
+
+            // $("#ddlEstado").select2();
+
+            // $("#ddlEstado").on('select2:select', function(e){
+            //     var estado = e.params.data;
+            //     console.log(estado.id);
+            //     if(estado.id != ""){
+            //     $.ajax({
+            //         method: "GET",
+            //         url: "https://localhost:44352/api/Cidade/" + estado.id,
+            //         dataType: "json",
+            //         success: function (data){
+            //             console.log(data);
+            //             var items =  '<option value="">Selecione...</option>'
+                       
+            //             $.each(data, function (i, cidade){
+                           
+            //                 items += '<option value="'+ cidade.id +'">' + cidade.text + '</option>'
+                            
+            //             });
+                      
+            //             $cidade.html(items);
+            //             $cidade.prop('disabled', false);
+            //             $cidade.select2();
+            //         }
+            //     })
+            //     }else{
+            //         $cidade.prop('disabled', true);
+            //         $cidade.html('');
+            //     }
+            // });
+            
+            // $("#ddlCidade").select2();
+
+            $('.datepicker').datepicker({
+                language: "pt-BR",
+                todayBtn: "linked",
+                format: "dd/mm/yyyy"
+            });
+
+        });
+           
+
+        </script>
+  
+</html>
